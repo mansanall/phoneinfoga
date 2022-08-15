@@ -3,6 +3,7 @@ package remote
 import (
 	"github.com/sundowndev/dorkgen"
 	"github.com/sundowndev/phoneinfoga/v2/lib/number"
+	"os"
 )
 
 const Googlesearch = "googlesearch"
@@ -35,7 +36,7 @@ func (s *googlesearchScanner) Name() string {
 }
 
 func (s *googlesearchScanner) ShouldRun(_ number.Number) bool {
-	return true
+	return os.Getenv("GOOGLECSE_CX") == ""
 }
 
 func (s *googlesearchScanner) Scan(n number.Number) (interface{}, error) {
