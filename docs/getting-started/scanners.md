@@ -7,7 +7,7 @@ PhoneInfoga provide several scanners to extract as much information as possible 
 PhoneInfoga can now be extended with plugins! You can build your own scanner and PhoneInfoga will use it to scan the given phone number.
 
 ```shell
-$ phoneinfoga scan -n +4176418xxxx --plugin ./custom_scanner.so
+$ phoneinfoga scan -n +6861947152 --plugin ./custom_scanner.so
 ```
 
 !!! info
@@ -26,14 +26,14 @@ The local scan is probably the simplest scan of PhoneInfoga. By default, the too
 ??? example "Output example"
 
     ```shell
-    $ phoneinfoga scan -n +4176418xxxx
+    $ phoneinfoga scan -n +6861947152
     
     Results for local
-    Raw local: 076418xxxx
-    Local: 076 418 xx xx
+    Raw local: 0861947152
+    Local: 086 194 71 52
     E164: +4176418xxxx
     International: 4176418xxxx
-    Country: CH
+    Country: TH
     ```
 
 ## Numverify
